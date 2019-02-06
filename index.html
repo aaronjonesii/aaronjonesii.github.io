@@ -15,15 +15,20 @@ layout: default
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article> -->
   
-    <div class="media post">
-      <img src="{{ post.image }}" class="mr-3 img-thumbnail" style="" alt="Random Image">
-      <div class="media-body">
+    <div class="media post row">
+      
+      <div class="col-4">
+        <img src="{{ post.image }}" class="mr-3 img-thumbnail" style="" alt="Random Image">
+      </div>
+      
+      <div class="media-body col-8">
         <h1 class="mt-0"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
         <div class="entry">
           {{ post.excerpt }}
         </div>
         <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
       </div>
+      
     </div>
   
   {% endfor %}
