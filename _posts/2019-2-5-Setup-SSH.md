@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Setup SSH Keys on Linux Systems
-image: https://picsum.photos/150/300?random
+image: https://user-images.githubusercontent.com/18272237/52320194-f3e43600-299b-11e9-94a2-5409e2882f05.jpg
 ---
 
 I am using this because it provides a secure way of accessing a server via SSH.
