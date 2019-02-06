@@ -4,7 +4,7 @@ layout: default
 
 <div class="posts">
   {% for post in site.posts %}
-    <article class="post">
+<!--     <article class="post">
       <img width="300px" height="150px" style="display: float;float:left;margin-right: 1rem;" src="https://picsum.photos/150/300?random">
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
@@ -13,6 +13,18 @@ layout: default
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
+    </article> -->
+  
+    <div class="media post">
+      <img src="https://picsum.photos/?random" class="mr-3" alt="Random Image">
+      <div class="media-body">
+        <h1 class="mt-0"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+        <div class="entry">
+          {{ post.excerpt }}
+        </div>
+        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      </div>
+    </div>
+  
   {% endfor %}
 </div>
