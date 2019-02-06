@@ -12,7 +12,7 @@ This poses a problem when I am ready for production use, to delete all records a
 mysql -u root -p
 ```
 Now execute the statements below:
-```SQL
+```sql
 # Select correct Database
 USE <Database name>;
 
