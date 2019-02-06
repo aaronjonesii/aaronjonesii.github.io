@@ -29,4 +29,4 @@ DELETE FROM <Table name>;
 ALTER TABLE api_post AUTO_INCREMENT = 1;
 ```
 
-Now the table is empty and ready for production.
+The table is now empty and ready for production.
