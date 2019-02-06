@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Reset MySQL Auto Increment
-image: https://picsum.photos/150/300?random
+image: https://user-images.githubusercontent.com/18272237/52320193-f3e43600-299b-11e9-81d4-5007fe237ec2.png
 ---
 
 While developing my WebApp, I ran into multiple posts being in my databse that I created for testing purposes only.
