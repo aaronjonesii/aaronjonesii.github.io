@@ -79,5 +79,4 @@ _**It is always a good idea to backup your keys..**_
 
 
 ***
-Mardown format from here: 
-<a href="http://www.jekyllnow.com/Markdown-Style-Guide/" target="_blank"> jekyllnow Markdown </a>
+[Reference](https://www.cyberciti.biz/faq/how-to-set-up-ssh-keys-on-linux-unix/)
