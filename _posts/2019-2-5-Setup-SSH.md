@@ -80,4 +80,4 @@ _**It is always a good idea to backup your keys..**_
 
 ***
 Mardown format from here: 
-<a href="http://www.jekyllnow.com/Markdown-Style-Guide/"> jekyllnow Markdown </a>
+<a href="http://www.jekyllnow.com/Markdown-Style-Guide/" target="_blank"> jekyllnow Markdown </a>
