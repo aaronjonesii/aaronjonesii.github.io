@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Reset MySQL Auto Increment
+image: https://anonsys.tech/assets/imgs/logo.png
 ---
 
 While developing my WebApp, I ran into multiple posts being in my databse that I created for testing purposes only.
