@@ -11,6 +11,7 @@ This poses a problem when I am ready for production use, to delete all records a
 # Login to MySQL Server
 mysql -u root -p
 ```
+Now execute the statements below:
 ```SQL
 # Select correct Database
 USE <Database name>;
