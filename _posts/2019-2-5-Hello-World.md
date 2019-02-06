@@ -8,7 +8,7 @@ I am using this because it provides a secure way of accessing a server via SSH.
 ## Procedure:
 1. Create key pair using ssh-keygen command
 2. Copy and install the public key using ssh-copy-id command
-3. Add user to sudo admin account
+3. Test changes
 4. Disable the password login for root account
 
 ##### Key locations:
