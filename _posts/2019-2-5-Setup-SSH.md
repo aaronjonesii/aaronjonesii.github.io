@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Setup SSH Keys on Linux Systems
+image: https://picsum.photos/150/300?random
 ---
 
 I am using this because it provides a secure way of accessing a server via SSH.
