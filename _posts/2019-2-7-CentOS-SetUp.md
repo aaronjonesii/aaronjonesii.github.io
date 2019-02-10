@@ -61,10 +61,12 @@ sudo yum install mysql-community-server -y
 
 ### Start MySQL Server
 ```bash
-sudo service mysqld start
+# sudo service mysqld start
+sudo systemctl start mysqld
 
 # Check status like below
-sudo service mysqld status
+# sudo service mysqld status
+sudo systemctl status mysqld
 ```
 
 ## MySQL Password
