@@ -52,7 +52,7 @@ sudo yum localinstall mysql80-community-release-el7-2.noarch.rpm -y
 # Check to make sure it worked
 sudo yum repolist enabled | grep "mysql.*-community.*"
 ```
-While using the MySQL YUM Repo, MySQL 8 si default
+While using the MySQL YUM Repo, MySQL 8.0 is default `as of 02.10.2018`
 
 ## Install MySQL
 ```bash
@@ -68,7 +68,7 @@ sudo service mysqld status
 ```
 
 ## MySQL Password
-At the intial start of the server, it generates a root user and stores the password int he log file.
+At the initial start of the server, it generates a root user and stores the password int he log file.
 ```bash
 # Retrieve temp password for root account
 sudo grep 'temporary password' /var/log/mysqld.log
