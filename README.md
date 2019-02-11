@@ -4,6 +4,18 @@
 
 
 ## Local Development
+To run on Mojave:
+```bash
+xcode-slect --install
+brew install rbenv ruby-build
+echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bash_profile
+source ~/.bash_profile
+rbenv install 2.5.1
+rbenv global 2.5.1
+gem install bundler jekyll
+gem install jekyll-sitemap jekyll-feed
+jekll serve
+```
 
 1. Install Jekyll and plug-ins in one fell swoop. `gem install github-pages` This mirrors the plug-ins used by GitHub Pages on your local machine including Jekyll, Sass, etc.
 2. Clone down your fork `git clone https://github.com/yourusername/yourusername.github.io.git`
