@@ -14,7 +14,7 @@ rbenv install 2.5.1
 rbenv global 2.5.1
 gem install bundler jekyll
 gem install jekyll-sitemap jekyll-feed
-jekll serve
+jekyll serve
 ```
 
 1. Install Jekyll and plug-ins in one fell swoop. `gem install github-pages` This mirrors the plug-ins used by GitHub Pages on your local machine including Jekyll, Sass, etc.
