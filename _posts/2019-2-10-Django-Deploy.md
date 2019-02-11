@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Deploy Django to Production
-image: https://user-images.githubusercontent.com/18272237/52463863-93452c80-2b46-11e9-9f3f-2daddc581277.jpg
+image: https://user-images.githubusercontent.com/18272237/52548043-3d1bf780-2d99-11e9-9ec6-cb601b21cb36.png
 ---
 Guide for deploying django to production using centOS, uWSGI, DJANGO 2.1, NGINX
 
