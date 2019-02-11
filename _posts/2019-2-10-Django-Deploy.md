@@ -44,7 +44,7 @@ Remember to reload the environment after editing the file `source ~/.bashrc`
 
 ## Create Database for Project
 ```sql
-CREATE DATABASE anonsys_db;
+CREATE DATABASE <database-name>;
 ```
 
 ## Check for  Database migrations
@@ -70,7 +70,7 @@ sudo systemctl nginx status
 Copy `elc/nginx/uwsgi_params` to your project directory `<path-to-project>`
 
 Create nginx conf file in project directory
-```editorconfig
+```config
 # project_nginx.conf
 
 # the upstream component nginx needs to connect to
