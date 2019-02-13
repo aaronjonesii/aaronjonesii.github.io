@@ -288,8 +288,34 @@ footer {
 @import "highlights";
 @import "svg-icons";
 
-# Highlight colors
+
+
+
+// Highlight colors for all browsers below
 ::selection {
 	background-color: #f1c40f;
 }
 
+/*** Works on common browsers ***/
+::selection {
+	background-color: #f1c40f;
+}
+
+/*** Mozilla based browsers ***/
+::-moz-selection {
+	background-color: #f1c40f;
+}
+
+/***For Other Browsers ***/
+::-o-selection {
+	background-color: #f1c40f;
+}
+
+::-ms-selection {
+	background-color: #f1c40f;
+}
+
+/*** For Webkit ***/
+::-webkit-selection {
+	background-color: #f1c40f;
+}
