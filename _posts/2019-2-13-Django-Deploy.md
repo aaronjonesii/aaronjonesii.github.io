@@ -45,13 +45,13 @@ pip install -r requirements.txt
  - GOOGLE_RECAPTCHA_SECRET_KEY - Google Account Recaptcha Secret Key
 
 ~~Remember to reload the environment after editing the file `source ~/.bashrc`~~
+#### `Notice there are no quotation marks!`
 ```ini
 # vars.txt
 
 var1=value1
 var2=value2
 ```
-#### `Notice there are no quotation marks!`
 
 ## Create Database for Project
 ```sql
