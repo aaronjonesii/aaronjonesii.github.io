@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Angular Notes
-image: https://user-images.githubusercontent.com/18272237/52909263-0d1a9b80-3254-11e9-9a97-3c818005ff0f.png
+image: https://user-images.githubusercontent.com/18272237/53821619-2bfb7c00-3f3c-11e9-8b9c-728f1e1ae9f3.png
 ---
 Information on Angular w/examples of common features.
 
