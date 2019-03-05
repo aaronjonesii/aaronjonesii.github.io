@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Angular Notes
-image: https://user-images.githubusercontent.com/18272237/53821619-2bfb7c00-3f3c-11e9-8b9c-728f1e1ae9f3.png
+image: https://user-images.githubusercontent.com/18272237/53821956-c65bbf80-3f3c-11e9-9d78-001a377abd0f.png
 ---
 Information on Angular w/examples of common features.
 
 
-## Create an Object Class
+#### Create an Object Class
 Create a class in its own file for an object to define its properties.
 ```javascript
 // src/app/task.ts
