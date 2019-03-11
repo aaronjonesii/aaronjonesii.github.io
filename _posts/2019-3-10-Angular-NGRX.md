@@ -3,7 +3,8 @@ layout: post
 title: Angular NgRx
 image: https://user-images.githubusercontent.com/18272237/54095339-33c48180-437d-11e9-8a0d-d0ae230be804.png
 ---
-Reactive State for Angular
+Implementing Reactive State for Angular into my Web Application. This blog post will be used for taking notes while
+integrating State Management into my Web Application for better maintainability. `View(calls action)` >> `Reducer(handles action)` >> `Store(update)` >> `Effects(calls API)` >> `Store(update)` >> `Selector(handles data)` >> `Component(UI)`
 
 Using this blog post as a `notepad` while implementing NgRx into my web application.
 
@@ -167,7 +168,7 @@ export class TasksEffects {
 
 
 
-#### Import StoreModule, EffectsModule and tasks.reducer file
+#### Import StoreModule, EffectsModule, tasks.effects and tasks.reducer files
 ```typescript
 // src/app/app/module.ts
 import { StoreModule } from '@ngrx/store';
@@ -248,15 +249,18 @@ export class MyCounterComponent {
 Not finished building the UI for the Task form
 This on the ToDo List, ironic huh? Wasn't on purpose..
 ```html
-<!-- Here will go the HTML Tasks Component to use Fetch, Create, Update, and Delete functions --><nb-card class='w-100' *ngIf="task$ | async as tasks" >
-      <nb-card-header> Tasks: </nb-card-header>
-      <nb-card-body>
+<!-- Here will go the HTML Tasks Component to use Fetch, Create, Update, and Delete functions -->
+<nb-card class='w-100' *ngIf="task$ | async as tasks" >
+    <nb-card-header> Tasks: </nb-card-header>
+    
+    <nb-card-body>
         <nb-list>
           <nb-list-item *ngFor="let task of tasks"> {{ task | json }} </nb-list-item>
         </nb-list>
-      </nb-card-body>
-      <nb-card-footer>  </nb-card-footer>
-    </nb-card>
+    </nb-card-body>
+    
+    <nb-card-footer>  </nb-card-footer>
+</nb-card>
 ```
 
 Add the Tasks component to the AppComponent template to be user
