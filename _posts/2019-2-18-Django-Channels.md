@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Django Channels
-image: https://user-images.githubusercontent.com/18272237/52909263-0d1a9b80-3254-11e9-9a97-3c818005ff0f.png
+image: https://user-images.githubusercontent.com/18272237/54102822-48664100-43a0-11e9-9791-ab31104a077c.png
 ---
 Django REST-API >> Channels >> Redis >> MySQL
 
@@ -43,7 +43,7 @@ ASGI_APPLICATION = 'mysite.routing.application'
 python3 manage.py runserver
 ```
 You should see `Starting ASGI/Channels development server at http://127.0.0.1:8000/`
-indicating that the Channels developemtn server has taken over
+indicating that the Channels development server has taken over
 
 
 
