@@ -1,7 +1,7 @@
 ---
 layout: post
 title: centOS 7 Firewall
-image: https://user-images.githubusercontent.com/18272237/52909263-0d1a9b80-3254-11e9-9a97-3c818005ff0f.png
+image: https://user-images.githubusercontent.com/18272237/54102823-48664100-43a0-11e9-8c91-0aa2cfd696ad.jpg
 ---
 Block IP Address using `firewall-cmd` on centos
 
