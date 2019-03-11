@@ -60,6 +60,22 @@ Use Two-way binding:
 `[(ngModel)]` is Angular's two-way data binding syntax.
 
 
+## Async Pipe
+Subscribe to an observable to return the lastest value it has emitted, when a new value is emitted, the pipe marks the component to be checked for changes.
+```javascript
+@Component({
+  selector: 'async-observable-pipe',
+  template: `<div><code>observable|async</code>:
+       Time: {{ time | async }}</div>`
+})
+export class AsyncObservablePipeComponent {
+  time = new Observable(observer =>
+    setInterval(() => observer.next(new Date().toString()), 1000)
+  );
+}
+```
+
+
 ***
 [Angular Docs](https://angular.io/docs)
 
