@@ -8,6 +8,26 @@ integrating State Management into my Web Application for better maintainability.
 
 Using this blog post as a `notepad` while implementing NgRx into my web application.
 
+### Overview
+
+`State` is an immutable data structure storing the current status fo different parts for your application. You can access the state through the store, you can think of the store as a master brain for you application. 
+
+
+`Store` is an observable of State, which you can _subscribe_ to. The store is an observer of actions, which are informational payloads that describe state changes. For the store to update the State when data is received, actions must be dispatched to the store.
+
+
+`Actions` are payloads of information to update the state by dispatching to the store, an actions has a type and an optional payload. **`Always write actions first to plan out the different use cases of the application, actions are the backbone of an NgRx application.`** Good actions can be read a year later and still be able to easily find where they are dispatched.
+
+
+`Reducers` are pure functions that use actions along with the previous state to produce the new state.
+
+
+`Selectors` are alos pure functions that are used to get simple and complex pieces of state. They act as queries to your store.
+
+
+`Effects` are used to connect actions to side effects or external requests. Effects can also listen for actions and perform a side effect which that effect can dispatch a new action _if desired_. Effects helps reducers from containing too much implementation details, also keeps you state from being full of temporary clutter.
+
+
 ##### Core Principles
 - State is a single, immutable data structure.
 - Components delegate responsibilities to side effects, which are handled in isolation.
