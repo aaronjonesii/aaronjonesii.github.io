@@ -12,21 +12,54 @@ Using this blog post as a `notepad` while implementing NgRx into my web applicat
 
 `State` is an immutable data structure storing the current status fo different parts for your application. You can access the state through the store, you can think of the store as a master brain for you application. 
 
-
 `Store` is an observable of State, which you can _subscribe_ to. The store is an observer of actions, which are informational payloads that describe state changes. For the store to update the State when data is received, actions must be dispatched to the store.
-
 
 `Actions` are payloads of information to update the state by dispatching to the store, an actions has a type and an optional payload. **`Always write actions first to plan out the different use cases of the application, actions are the backbone of an NgRx application.`** Good actions can be read a year later and still be able to easily find where they are dispatched.
 
-
 `Reducers` are pure functions that use actions along with the previous state to produce the new state.
-
 
 `Selectors` are alos pure functions that are used to get simple and complex pieces of state. They act as queries to your store.
 
-
 `Effects` are used to connect actions to side effects or external requests. Effects can also listen for actions and perform a side effect which that effect can dispatch a new action _if desired_. Effects helps reducers from containing too much implementation details, also keeps you state from being full of temporary clutter.
 
+{: .mb-0}
+### RxJS
+
+{: .table .table-sm .table-bordered .table-striped .table-hover }
+| Operator | Returns | Description |
+| compose | Single | allows you create a custom operator |
+| concat and concatWith | Observable | concatenates the items emitted by multiple Singles as Observable emissions |
+| create | Single | create a Single from scratch by calling subscriber methods explicitly |
+| delay | Single | move the emission of an item from a Single forward in time |
+| doOnError | Single | returns a Single that also calls a method you specify when it calls onError |
+| doOnSuccess | Single | returns a Single that also calls a method you specify when it calls onSuccess |
+| error | Single | returns a Single that immediately notifies subscribers of an error |
+| flatMap | Single | returns a Single that is the result of a function applied to an item emitted by a Single |
+| flatMapObservable | Observable | returns an Observable that is the result of a function applied to an item emitted by a Single |
+| from | Single | converts a Future into a Single |
+| just | Single | returns a Single that emits a specified item |
+| map | Single | returns a Single that emits the result of a function applied to the item emitted by the source Single |
+| merge | Single | converts a Single that emits a second Single into a Single that emits the item emitted by the second Single |
+| merge and mergeWith | Observable | merges the items emitted by multiple Singles as Observable emissions |
+| observeOn | Single | instructs the Single to call the subscriber methods on a particular Scheduler |
+| onErrorReturn | Single | converts a Single that makes an error notification into a Single that emits a specified item |
+| switchMap | Oberservable | switch to a new observable |
+| subscribeOn | Single | instructs the Single to operate on a particular Scheduler |
+| timeout | Single | returns a Single that makes an error notification if the source Single does not emit a value in a specified time period |
+| toSingle | Single | converts an Observable that emits a single item into a Single that emits that item |
+| toObservable | Observable | converts a Single into an Observable that emits the item emitted by the Single and then completes |
+| zip and zipWith | Single | returns a Single that emits an item that is the result of a function applied to items emitted by two or more other Singles |
+{: .w-auto .mb-4 .text-center }
+
+Functions used:
+* pipe - 
+* map - Apply projection with each value from source
+* switchMap - Map to observable, complete previous inner observable emit values (Cancels the current subscription/request and can cause race condition USE for GET/cancellable requests)
+* concat - runs subscriptions in order and is less performant ( USE for GET/POST/PUT requests when order is important)
+* mergeMap - Map to observable, emit values | Runs subscriptions/requests in parallel (USER for PUT/POST/DELETE methods when order is not important)
+* exhaustMap - Ignores all subsequent subscriptions/requests until it completes (USE for login when you do not want more requests until the initial one is complete)
+* mapTo - One input, one output
+* tap - 
 
 ##### Core Principles
 - State is a single, immutable data structure.
@@ -43,6 +76,13 @@ Using this blog post as a `notepad` while implementing NgRx into my web applicat
 - Router Store - Bindings to connect the Angular Router to @ngrx/store.
 - Entity - Entity State adapter for managing record collections.
 - Schematics - Scaffolding library for Angular applications using NgRx libraries.
+
+{: .mb-0}
+`Process for creating/executing new Action for State:`
+1. Write Action 
+2. Define a reducer function
+3. Update Component class with selector and methods to dispatch actions
+4. Write an Effect
 
 
 ###### [Following Tutorial](https://ngrx.io/guide/store#tutorial):
