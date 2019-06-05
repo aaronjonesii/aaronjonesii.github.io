@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Using this blog as my official WebApp's blog. 
+Official interim Anonymous Systems blog.  
 Why reinvent the wheel?
 
-Eventually I would like to include these posts in my website through GitHub's API or even cloning the blog repository.
+You can say this is a prototype, MK I. There will be a better, more intuitive, webapp for the blog posts in the future.
 
 ### Contact me
 <a href="https://anonsys.tech" target="_blank"> Anonymous Systems WebApp </a>
 
-[admin@anonsys.tech](mailto:admin@anonsys.tech)
+[blog@anonsys.tech](mailto:blog@anonsys.tech)
