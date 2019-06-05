@@ -26,7 +26,7 @@ NgRx authentication template frontend. This is to be used with backend server th
 | [Auth] Authenticated                  | Token exists |
 | [Auth] Not Authenticated              | Token does not exist |
 | [Auth] Clear Authentication Details   | Remove all info from localStorage |
-| [Auth] Check Session                  | Check is token is expired |
+| [Auth] Check Session                  | Check if token is expired |
 | [Auth] Session Success                | Token is valid |
 | [Auth] Session Expired                | Token is expired |
 | [Auth] Refresh Session                | Attempt to Refresh Token |
